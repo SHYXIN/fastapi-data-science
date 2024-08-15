@@ -6,7 +6,7 @@ from fastapi import FastAPI, WebSocket
 from pydantic import BaseModel
 from starlette.websockets import WebSocketDisconnect
 
-broadcast = Broadcast("redis://localhost:6379")
+broadcast = Broadcast("redis://localhost:6379/4")
 CHANNEL = "CHAT"
 
 @contextlib.asynccontextmanager
